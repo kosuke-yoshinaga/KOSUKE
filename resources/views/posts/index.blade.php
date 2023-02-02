@@ -17,5 +17,6 @@
             </div>
             @endforeach
         </div>
+        <div class='Paginate'>{{ $posts->links()}}</div>
     </body>
 </html>
