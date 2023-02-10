@@ -9,10 +9,7 @@ class PostController extends Controller
 {
     public function index(Post $post)
     {
-<<<<<<< HEAD
-        return view('posts/index')->with(['posts' => $post->getPaginateByLimit(1)]);
-=======
-        return view('posts/index')->with(['posts' => $post->getPaginateBylimit(1)]);
+        return view('posts/index')->with(['posts' =>$post->getPaginateByLimit(1)]);
     }
     
     public function show(Post $post)
@@ -22,8 +19,7 @@ class PostController extends Controller
     
     public function  create() 
     {
-        return view('posts/create');    
->>>>>>> 8cf6ac9 (作成画面表示)
+        return view('posts/create');
     }
 }
 ?>
